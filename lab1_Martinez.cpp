@@ -44,5 +44,29 @@ int main(){
 
     cout<<"EXERCISE"<<endl;
     // declare variables
+    string country;
+    char gender;
+    int zipcode;
+    float rate;
+
+    // Collect variables
+    cout<<"Enter country: ";
+    cin>>country;
+    
+    cout<<"Enter gender: ";
+    cin>>gender;
+
+    cout<<"Enter zipcode: ";
+    cin>>zipcode;
+
+    cout<<"Enter rate: ";
+    cin>>rate;
+
+    // Print results
+    cout<<"\nEntered country: "<<country<<"";
+    cout<<"\nSelected gender: "<<gender<<"";
+    cout<<"\nZip code: "<<zipcode<<"";
+    cout<<"\nTax rate: "<<rate<<"";
+
     return 0;
 }
