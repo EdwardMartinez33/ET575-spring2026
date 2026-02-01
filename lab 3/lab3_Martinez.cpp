@@ -23,7 +23,7 @@ int main(){
     number = 5;
     int number2 = 2;
     cout<<"sum = "<<number + n<<endl;
-    count<<"without casting division = "<<number + number2<<endl;
+    cout<<"without casting division = "<<number + number2<<endl;
     // casting conver from one data type into another data type
     cout<<"division = "<< number/static_cast<float> (number2) <<endl;
 
@@ -97,6 +97,36 @@ int main(){
     cout<<"logical comparison 4 = "<<logicalcom4<<endl;
 
     // EXERCISE
+    int a;
+    int b;
+
+    cout<<"Enter the first number (a): ";
+    cin >>a;
+
+    cout<<"Enter the second number (b): ";
+    cin >>b;
+
+    cout <<"Arithmitic operations:"<<endl;
+    cout<<"a + b = "<<a+b<<endl;
+      cout<<"a - b = "<<a-b<<endl;
+        cout<<"a * b = "<<a*b<<endl;
+          cout<<"a / b = "<<a/b<<endl;
+            cout<<"a % b = "<<a%b<<endl;
+
+    a += 10;
+    b -= 5;
+
+    cout<<"After assignment operators:"<<endl;
+    cout<<"a = "<<a<<endl;
+    cout<<"b = "<<b<<endl;
+
+    cout<<"boolean operations:"<<endl;
+    cout<<"Is a greater than b? "<< (a>b)<<endl;
+    cout<<"Is a equal tp b? "<< (a==b)<<endl;
+    cout<<"Is a not equal to b? "<< (a!=b)<<endl;
+    cout<<"Are both a and b positive?"<< (a> 0 && b > 0)<<endl;
+    cout<<"Is either a or b negative? "<< (a < 0 || b < 0)<<endl;
+    cout<<"Is a not greater than b? "<< !(a>b)<<endl;
 
     return 0;
 
