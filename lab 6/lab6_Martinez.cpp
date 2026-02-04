@@ -23,7 +23,7 @@ int main(){
 
     cout<<"\n ---- Example 2: if statement ----"<<endl;
     // if statement will run the codes in between the curly braces if the statement is TRUE.
-    int num1 = 1;
+    int num1 = 3;
     int num2 = 5;
 
     if(num1 == num2){
@@ -53,14 +53,14 @@ int main(){
         cout<<"num2 is greater than num1"<<endl;
     }
 
-    cout<<"\n ---- Example 5: multiway statement: find the color depending of the"<<endl;
+    cout<<"\n ---- Example 5: multiway statement: find the color depending of the wavelength"<<endl;
     /*
-    - Ultraviolet: less than 170 on and greater than or equal to 10
-    - Blue: 350 to 320, inclusive
-    - Green: 521 to 580, inclusive
-    - Red: 591 to 740
-    - Infrared: more than 741
-    - Any wavelength less than 10 is undefined
+    - Ultraviolet: less than 379 nm and greater than or equal to 10 nm
+    - Blue: 380 nm to 520 nm, inclusive
+    - Green: 521 nm to 590 nm, inclusive
+    - Red: 591 nm to 740 nm
+    - Infrared: more than 741 nm
+    - Any wavelength less than 10 nm is undefined
     */
    // Declare variables
    int wavelength = 0;
@@ -73,9 +73,9 @@ int main(){
    if(wavelength<=379 && wavelength>=10){
     color = "ultraviolet";
    }
-   else if(wavelength=520 && wavelength>=300)
+   else if(wavelength=520 && wavelength>=380)
     color = "blue";
-   else if(wavelength<=550 && wavelength>=321)
+   else if(wavelength<=590 && wavelength>=521)
     color = "green";
    else if(wavelength<=740 && wavelength>=591)
     color = "red";
@@ -104,7 +104,9 @@ int main(){
    cout<<"Enter your homework grade: "<<endl;
    cin>>homework;
 
-   cout<<"Your grade is: "<<final_exam *0.5 + labs * 0.3 + homework * 0.2<<endl;
+   grade = final_exam *0.5 + labs * 0.3 + homework * 0.2;
+
+   cout<<"Your grade is: "<<grade<<endl;
 
    if (grade>=90){
     gpa = 'A';
@@ -118,7 +120,8 @@ int main(){
    else if (grade<59)
     gpa = 'F';
    else
-    gpa = 'undefined'; 
+    gpa = 'undefined';
+ 
 
     cout<<"A final grade of "<<grade<<" is equivalent to a GPA of "<<gpa<<endl;
 
