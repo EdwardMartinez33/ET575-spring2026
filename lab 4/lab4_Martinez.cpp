@@ -92,7 +92,7 @@ int main(){
     cout<<"Word after replace method: "<<word<<endl;
 
     // remove 3 characters from the end of the message
-    word.erase(4,3);
+    word.erase(word.length() - 3,3);
     cout<<"Word after erase method: "<<word<<endl;
 
 
