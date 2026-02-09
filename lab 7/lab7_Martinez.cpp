@@ -101,7 +101,9 @@ int main(){
     cout<<"Super Car"<<endl;
    }
    else if(car_budget >150000){
-    cout<<"With "<<car_budget<<" you can afford a High-end luxury car"<<endl;
+    cout<<"With "<<car_budget<<" you can afford a High-end luxury car: ";
+    if(car_budget >150000)
+    cout<<"Maserati or Rolls-Royce?"<<endl;
    }
    else{
     cout<<"Invalid budget!"<<endl;
