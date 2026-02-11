@@ -92,12 +92,11 @@ int main(){
      char oper = '+,-,*,/,%,q';
      int result;
 
-     cout<<"Enter the first number: "<<endl;
-     cout<<"Enter the second number: "<<endl;
-     cout<<"Choose an operation (+,-,*,/,%, q to quit): "<<endl;
-
+     cout<<"Enter the first number: ";
      cin>>number1;
+     cout<<"Enter the second number: ";
      cin>>number2;
+     cout<<"Choose an operation (+,-,*,/,%, q to quit): ";
      cin>>oper;
 
      switch (oper)
@@ -107,25 +106,29 @@ int main(){
         break;
 
         case '-':
-        result = number2 - number1;
+        result = number1 - number2;
+        break;
 
         case '*':
         result = number1 * number2;
+        break;
 
         case '/':
        result = number1 / number2;
+       break;
 
         case 'q':
         break;
 
         case '%':
         result = number1 % number2;
+        break;
      
      default:
      cout<<"Invalid"<<endl;
         break;
      }
-     cout<<"Result: "<<number1<< oper <<number2<<" = "<<result<<endl;
+     cout<<"Result: "<<number1<<oper<<number2<<" = "<<result<<endl;
 
     return 0;
 }
