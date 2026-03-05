@@ -33,7 +33,7 @@ int main(){
 
    cout<<"\n ---- Example 3: for loop as a decrement counter"<<endl;
    // counter from 2 to -5 (inclusive) with step of 1 -->
-   for(int n = 2; n>= -5; n=={
+   for(int n = 2; n>= -5; n--){
     cout<<n<<"\t";
    }
    cout<<endl;
@@ -48,9 +48,9 @@ int main(){
    cout<<"\n ---- Example 5: nested conditional statement within the "<<endl;
    // counter from -10 to 50 step of 3. Count  how many numbers are
    int counter_5 = 0;
-   for(int X = -10; X<=10 ; X+=2){
+   for(int x = -10; x<=10 ; x+=3){
     cout<<x<<"\t";
-    if(x%5==0 && X !=0){
+    if(x%5==0 && x !=0){
         counter_5 ++;
     }
    }
@@ -59,16 +59,24 @@ int main(){
 
 
    cout<<"\n ---- EXERCISE 1 ---- "<<endl;
-   for(int)
+   int counter = 0;
+   for(int a = 21; a>=-21 ; a-=5){
+    cout<<a<<"\t";
+    if(a % 2 == 0){
+            counter++;
+        }
+   }    
+   cout<<endl;
+   cout<<"Multiples of 2: "<<counter<<endl;
 
    cout<<"\n ---- EXERCISE 2 ---- "<<endl;
    int usernumber;
    cout<<"Enter an initial number: ";
    cin>>usernumber;
 
-   for(usernumber; ;){
-
-    
-   }
+   for(usernumber; usernumber<=30; usernumber += 4){
+    cout<<usernumber<<"\t";
+    }
+    cout<<endl;
     return 0;
 }
