@@ -137,13 +137,9 @@ int main(){
     do{
         cout<<"Enter a number: ";
         cin>>x;
-        if(x==0){
-            break;
-        }
-        else{
-            sum += x;
-            loop_counter ++;
-        }
+       sum += x;
+    loop_counter ++;
+        
 
     }while(loop_counter);
 
