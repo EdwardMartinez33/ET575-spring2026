@@ -79,4 +79,19 @@ int collectsnumber(){
 int num;
 cout<<"Enter a number: ";
 cin>>num;
+
+if (num<=0){
+cout<<"Error ";
+    return collectsnumber();    
+}
+else{
+    return num;
+}
+}
+#include<cmath>
+float distance(int x1, int x2, int y1, int y2){
+    return((x2-x1)*2+(y2-y1)*2);
+}
+void printdistance(int x1, int x2, int y1, int y2){
+    cout<<"The distance of points "<<num<<y1<<distance<<y2
 }
