@@ -36,7 +36,7 @@ int main(){
 
     int area_rectangle = arearectangle(lengt, widt);
     printarea(area_rectangle);
-    return 0;
+    
     
     cout<<"---- EXERCISE ----"<<endl;
     int number;

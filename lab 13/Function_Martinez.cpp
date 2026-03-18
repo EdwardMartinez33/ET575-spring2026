@@ -69,5 +69,5 @@ bool even(int num){
     }
 }
 void printResult(int num, bool result){
-    cout<<"Is "<<num<<" even?"<<result<<endl;
+    cout<<"Is "<<num<<" even? "<<result<<endl;
 }
