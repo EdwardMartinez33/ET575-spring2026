@@ -90,8 +90,8 @@ else{
 }
 #include<cmath>
 float distance(int x1, int x2, int y1, int y2){
-    return((x2-x1)*2+(y2-y1)*2);
+    return sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)); 
 }
 void printdistance(int x1, int x2, int y1, int y2){
-    cout<<"The distance of points "<<num<<y1<<distance<<y2
+    cout<<"The distance of points ("<<x1<<","<<y1<<") and ("<<x2<<","<<y2<<") is "<<distance(x1,x2,y1,y2)<<endl;
 }
