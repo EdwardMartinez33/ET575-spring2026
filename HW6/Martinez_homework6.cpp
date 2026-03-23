@@ -22,12 +22,3 @@ int main(){
     cout<<"value 2 = "<<*ptr<<endl;
     cout<<"ref = "<<&ref<<endl;    
 }
-int rose(int n){
-    if (n<=0){
-        return 1;
-    }
-    else{
-        return (rose(n-1)*n);
-    }
-}
-
