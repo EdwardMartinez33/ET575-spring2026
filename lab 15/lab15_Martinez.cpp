@@ -20,6 +20,20 @@ int main(){
      cout<<random_5_12()<<endl;
 
      cout<<"---- Example 4 ----"<<endl;
+     int roll1 = 1+rand()%6;
+     cout<<endl<<endl;
+     int roll2 = rolldice();
+     bool resultmatch = matchdices(roll1, roll2);
+     printdices(roll1,roll2,resultmatch);
 
+     cout<<"---- Exercise ----"<<endl;
+     srand(time(0));
+     int d1 = random_1_6();
+     int d2 = random_1_6();
+     cout<<"Die 1: "<<d1<<endl;
+     cout<<"Die 2: "<<d2<<endl;
+
+     bool result = twodice(d1,d2);
+     printresult(result);
     return 0;
 }
