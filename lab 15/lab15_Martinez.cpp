@@ -35,5 +35,12 @@ int main(){
 
      bool result = twodice(d1,d2);
      printresult(result);
+
+     string something = "ET575";
+    printvalue(something);	 			
+    passref(something); 		 			
+    printvalue(something);				
+    passmemory(&something);
+
     return 0;
 }

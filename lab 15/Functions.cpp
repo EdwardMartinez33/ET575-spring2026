@@ -56,3 +56,13 @@ void printresult(bool result){
     }
         
 }
+void printvalue(string v){
+    cout<<"Pass value = "<<v<<endl;
+}
+void passref(string& v){
+    cout<<"Pass refernce = "<<v<<endl;
+    v = "Good Morning";
+}
+void passmemory(string* v){
+    cout<<"Pass refernce = "<<v<<endl;
+}
