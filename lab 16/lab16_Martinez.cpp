@@ -45,5 +45,7 @@ int main(){
 
     // EXERCISE
     cout<<"---- EXERCISE ----"<<endl;
+    lowestarray();
+    
 return 0;
 }

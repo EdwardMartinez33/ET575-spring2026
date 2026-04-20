@@ -5,6 +5,7 @@ April 13, 2026
 */
 
 #include<iostream>
+#include<string>
 
 using namespace std;
 
@@ -127,7 +128,7 @@ void printarray(int arraysize, int arrnumbers[]){
 }
 
 // functio to find the maximum number in an array
-int maxnumber(int arraysize, int arrnumbers){
+int maxnumber(int arraysize, int* arrnumbers){
     int maxvalue = arrnumbers[0];
     for(int index = 0; index < arraysize; index++){
         if(arrnumbers[index]>maxvalue){
@@ -139,13 +140,19 @@ int maxnumber(int arraysize, int arrnumbers){
 
 // EXERCISE
 void lowestarray(){
-    int score[5];
-    score[0] = 60;
-    score[1] = 90;
-    score[2] = 75;
-    score[3] = 88;
-    score[4] = 100;
+int score[5];
+score[0] = 60;
+score[1] = 90;
+score[2] = 75;
+score[3] = 88;
+score[4] = 100;
 
-    int lowest = 
-    cout<<"The lowest score is "<<lowest<<endl;
+int lowest = score[0];
+
+for(int i = 0; i < 5; i++){
+    if(score[i] < lowest){
+        lowest = score[i];
+    }
+}
+cout<<"The lowest score is "<<lowest<<endl;
 }
