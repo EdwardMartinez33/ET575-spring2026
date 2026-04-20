@@ -55,30 +55,97 @@ void printreference(string& n){
    cout<<"Pointer value = "<<n<<endl;
 }
 
-void innerarray(){
-    int score[5]; // declared an array of five elements
-    cout<<score<<endl;
+void introarray(){
+    int scores[5]; // declared an array of five elements
 
-score[0] = 60; // The first element has index 0
-score[1] = 30;
-score[2] = 75;
-score[3] = 79;
-score[4] = 98; // The last element has index 4 (array length-1)
-cout<<"4th score = "<<score[3]<<endl;
+scores[0] = 90; // The first element has index 0
+scores[1] = 70;
+scores[2] = 86;
+scores[3] = 92;
+scores[4] = 60; // The last element has index 4 (array length-1)
 
-int avg = (score[0] +score[1] +score[2] +score[3] +score[4])/5;
-cout<<"The average is "<<avg<<endl;
+// find the average of the scores
+float average = scores[0]+scores[1]+scores[2]+scores[3]+scores[4]/5.0;
+cout<<"The average is "<<average<<endl;
 
-char sym[3]; // char array with 3 elements
-sym[0] = '%';
-sym[1] = 'A';
-sym[2] = '$';
-cout<<sym<<endl;
-cout<<"3rd element in sym[] array = "<<sym[2]<<endl;
-double batteryLifeInHours[4]; // double array with 4 elements
-batteryLifeInHours[0] = 2.1;
-batteryLifeInHours[1] = 3.2;
-batteryLifeInHours[2] = 4.5;
-batteryLifeInHours[2] = 4.5;
-cout<<"2nd element is array batteryLifeHours "<<batteryLifeInHours[1]<<endl;
+// initialize an array
+char sym[3] = {'%', '$', '#'}; // char array with 3 elements
+
+// initialize an array without an array's size
+string names[] = {"Peter","Annie"};
+
+cout<<"The first name is = "<<names[0]<<endl;
+
+
+}
+// example 4: length of an array
+void lenghtarray(){
+    // sizeof function returns the number of bytes of value
+    cout<<"character = "<<sizeof(char)<<endl;
+    cout<<"string = "<<sizeof(string)<<endl;
+    cout<<"integer = "<<sizeof(int)<<endl;
+    cout<<"float = "<<sizeof(float)<<endl;
+    cout<<"double = "<<sizeof(double)<<endl;
+
+    // array
+    int numbers[] = {2,7,9,-10,3};
+
+    cout<<"length of array numbers = "<<sizeof(numbers)<<endl;
+    // to find the number of values in an array = total size of an array / size of the data
+    cout<<"There is "<<(sizeof(numbers)/sizeof(int))<<" values in an array"<<endl;
+}
+
+// example 5: loop through an array
+void looparray(){
+    int s = 5;
+    int arr[s] = {1,2,3,4,5};
+    
+    // create a pointer to arr
+    int *ptr_array = arr;
+
+    // loop through an array
+    for(int index = 0; index < s ; index++){
+        cout<<"index = "<<index<<"has value = "<<arr[index]<<endl;
+
+    }
+}
+
+// example 6: pass an array to a function
+// function to populate data into an array
+void fillup(int arraysize, int arrnumbers[]){
+    for(int index = 0; index < arraysize; index++){
+        cout<<"Enter a number: ";
+        cin>>arrnumbers[index];
+    }
+}
+// function to print all data in an array
+void printarray(int arraysize, int arrnumbers[]){
+    for(int index = 0; index < arraysize; index++){
+        cout<<arrnumbers[index]<<"\t";
+    }
+    cout<<endl;
+}
+
+// functio to find the maximum number in an array
+int maxnumber(int arraysize, int arrnumbers){
+    int maxvalue = arrnumbers[0];
+    for(int index = 0; index < arraysize; index++){
+        if(arrnumbers[index]>maxvalue){
+            maxvalue = arrnumbers[index];
+        }
+    }
+    return maxvalue;
+}
+
+// EXERCISE
+void lowestarray(){
+    int score[5];
+    score[0] = 60;
+    score[1] = 90;
+    score[2] = 75;
+    score[3] = 88;
+    score[4] = 100;
+
+    int lowest = 
+    cout<<"The lowest score is "<<lowest<<endl;
 }
