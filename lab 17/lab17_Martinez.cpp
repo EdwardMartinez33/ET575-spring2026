@@ -1,6 +1,6 @@
 /*
 Edward Martinez
-Lab 16
+Lab 17
 April 20, 2026
 */
 
@@ -10,6 +10,15 @@ April 20, 2026
 using namespace std;
 
 int main(){
-    cout<<"---- EXERCISE ----"<<endl;
+    cout<<"---- Function 1 ----"<<endl;
+    const int s = 5;
+    int arr[s] = {1, 4, 6, -4, -8};
     
+    int totaleven = total(arr,s);
+    cout<<totaleven<<endl;
+
+    int totalnegative = negative(arr,s);
+    cout<<totalnegative<<endl;
+
+    return 0;
 }
