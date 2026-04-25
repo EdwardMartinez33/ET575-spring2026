@@ -50,3 +50,44 @@ int search(int *arr, int numberuserindex, int target){
     else
     return -1;
 }
+
+// EXERCISE
+int collectnumber(int arr[], int maxsize){
+    int count = 0;
+    int num;
+    cout<<"Enter 5 non-zero numbers: ";
+
+    while(count<maxsize){
+        cin>>num;
+
+        if(num == 0){
+            break;
+        }
+        arr[count] = num;
+        count++;
+    }
+    return count;
+}
+float averagenumber(int arr[], int size){
+    int sum = 0;
+    for(int i = 0; i < size; i++){
+        sum += arr[i];
+    }
+    return (float) sum / size;
+}
+int closestmean(int arr[], int size, float avg){
+    int closest = arr[0];
+    float mindiff = abs(arr[0] - avg);
+    for(int i = 1; i < size; i++){
+        float diff = abs(arr[i] - avg);
+        
+        if(diff<mindiff){
+            mindiff = diff;
+            closest = arr[i];
+        }
+    }
+    return closest;
+}
+void printresult(float avg, int closest){
+    cout<<"The closest number to average "<<avg<<" is "<<closest<<endl;
+}

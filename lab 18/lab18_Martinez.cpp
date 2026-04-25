@@ -33,6 +33,14 @@ int main(){
     cout<<"Test search index "<<foundindex<<endl;
 
     // EXERCISE
+    cout<<"---- EXERCISE ----"<<endl;
+    int n[ARRAYSIZE];
+
+    int count = collectnumber(n, ARRAYSIZE);
+    float avg = averagenumber(n,count);
+    int closest = closestmean(n,count,avg);
+
+    printresult(avg, closest);
 
     return 0;
 }
