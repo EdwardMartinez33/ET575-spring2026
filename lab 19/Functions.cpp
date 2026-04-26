@@ -20,32 +20,45 @@ cout<<endl;
 }
 
 // Example 2
-int even2d(int a[][NUMCOLS], int rowsize){
-int sumeven = 0;
+int sumevenpositive(int arr[][COLSIZE], int rowsize){
+int sumallevenpositive = 0;
 for(int row = 0; row<rowsize; row++){
-for(int col = 0; col<NUMCOLS; col++){
-if(a[row][col] > 0 && a[row][col]%2 == 0){
-sumeven++;
+for(int col = 0; col<COLSIZE; col++){
+if(arr[row][col] > 0 && arr[row][col]%2 == 0){
+sumallevenpositive += arr[row][col];
+        }
+cout<<endl;
+    }
 }
+return sumallevenpositive;
 }
-}
-return sumeven;
+
+void printsum(int sumallevenpositive){
+    cout<<"The result is "<<sumallevenpositive<<endl;
 }
 
 // EXERCISE
-void populate(int arr[][NUMCOLS], int rowsize){
-    for(int row = 0; row<rowsize; row++){
-        for(int col = 0; col<NUMCOLS; col++){
-            arr[row][col] rand % 101;
+void populate(int arr[3][4]){
+    for(int row = 0; row< 3; row++){
+        for(int col = 0; col<4; col++){
+            arr[row][col] = rand() % 101;
         }
     }
 }
-void printvaluearray(int arr[][NUMCOLS], int rowsize){
-    for(int row = 0; row<rowsize; row++){
-        for(int col = 0; col<NUMCOLS; col++){
+void printvaluearray(int arr[3][4]){
+    for(int row = 0; row< 3; row++){
+        for(int col = 0; col<4; col++){
             cout<<arr[row][col]<<"\t";
         }
         cout<<endl;
     }
 }
-float average()
+float average(int arr[3][4]){
+    int sum = 0;
+    for(int row = 0; row< 3; row++){
+        for(int col = 0; col<4; col++){
+            sum += arr[row][col];
+        }
+    }
+    return (float)sum/(3*4);
+}
