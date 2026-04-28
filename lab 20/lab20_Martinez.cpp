@@ -15,6 +15,23 @@ int main(){
     cout<<"Collected number = "<<n<<endl;
 
     cout<<"---- Example 2 ----"<<endl;
+    //readfile("samplefile.txt");
+
+    cout<<"---- Example 3 ----"<<endl;
+    writefile("intro.txt");
+
+    cout<<"---- Example 4 ----"<<endl;
+    appendmsg("samplefile.txt", "Edward Martinez");
+
+    cout<<"---- EXERCISE ----"<<endl;
+    create();
+
+    string name;
+    cout<<"Enter your full name: ";
+    getline(cin, name);
     
+    append(name);
+    read("data_user.txt");
+
     return 0;
 }
