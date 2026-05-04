@@ -68,6 +68,27 @@ fout.close();
 
 }
 
+// Example 5: check if a file exists
+void checkfile(string filename){
+    ifstream fin;
+    fin.open(filename);
+
+    // if the filename dosen't exist in the root directory, exit the function
+    if(fin.fail()){
+        cout<<"File "<<filename<<" dosen't exist"<<endl;
+        exit(1);
+    }
+
+    // if the filename exists, then read all the lines in the file
+    string eachline;
+    while(getline(fin, eachline )){
+        cout<<"Line 1 = "<<eachline<<endl;
+    }
+
+    // close the file
+    fin.close();
+}
+
 // EXERCISE
 void create(){
     ofstream file("data_user.txt");

@@ -23,6 +23,9 @@ int main(){
     cout<<"---- Example 4 ----"<<endl;
     appendmsg("samplefile.txt", "Edward Martinez");
 
+    cout<<"---- Example 5: check if a file exists ----"<<endl;
+    checkfile("samplefile.txt");
+
     cout<<"---- EXERCISE ----"<<endl;
     create();
 
