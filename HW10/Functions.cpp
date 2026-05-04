@@ -11,19 +11,17 @@ May 4, 2026
 using namespace std;
 
 void readfile(string filename){
-    ifstream fin;
-    fin.open(filename);
+    ifstream fin(filename);
 
     string eachline;
     while(getline(fin, eachline )){
-        cout<<"Line 1 = "<<eachline<<endl;
+        cout<<eachline<<endl;
     }
     fin.close();
 }
 void wordcount(string filename){
-    ifstream fin;
-    ofstream fout;
-    fout.open(filename);
+    ifstream fin(filename);
+    ofstream fout("wordcounts.txt", ios::app);
 
     string words;
     int count = 0;
@@ -33,12 +31,12 @@ void wordcount(string filename){
     }
     fout<<"Edward Martinez \n "<<"Total number of words: "<<count<<endl;
     fin.close();
+    fout.close();
 }
 void earth(string filename){
-    ifstream fin;
-    ofstream fout;
-    fout.open("wordcounts.txt, ios::app");
-
+    ifstream fin(filename);
+    ofstream fout("wordcounts.txt", ios::app);
+    
     string words;
     int count = 0;
 
@@ -47,6 +45,7 @@ void earth(string filename){
             count++;
         }
     }
-    cout<<"The word 'Earth' appears "<<count<<" times in the document"<<endl;
+    fout<<"The word 'Earth' appears "<<count<<" times in the document"<<endl;
     fin.close();
+    fout.close();
 }
